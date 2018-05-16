@@ -1,0 +1,43 @@
+body{
+    background: #101010;
+    margin: 0;
+    padding: 0;
+}
+table{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+thead{
+    background: #171717;
+}
+td{
+    background: #171717;
+    width: 200px;
+    height: 200px;
+}
+.header{
+    background: #171717;
+    padding-top: 10px;
+}
+.title {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 10em;
+    color: white;
+    padding-bottom: 0;
+    margin: 0;
+}
+.subtitle {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+    margin: 10px;
+}
+#contacts li{
+    
+}
