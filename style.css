@@ -3,7 +3,7 @@ body{
     color: white;
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: Sans-Serif;
 }
 h1{
     font-size: 20vw;
@@ -11,9 +11,10 @@ h1{
     margin: 0;
 }
 h3{
+    font-weight: normal;
     text-align: center;
 }
-h4{
+button{
     text-align: center;
     margin: 15;
 }
@@ -33,4 +34,50 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+.hover-button {
+  font-family: Sans-Serif !important;
+  outline: none;
+  border: none;
+  padding: 20px;
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  position: relative;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  color: #fff;
+}
+.hover-button:before, .hover-button:after {
+  width: 0;
+  height: 3px;
+  content: " ";
+  background-color: #F44336;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+.hover-button:after {
+  top: 100%;
+}
+.hover-button:hover {
+  letter-spacing: 8px;
+  color: #F44336;
+}
+.hover-button:hover:before, .hover-button:hover:after {
+  width: 100%;
+  left: 0;
+}
+.hover-button:hover:after {
+  width: 100%;
+  left: 0;
 }
