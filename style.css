@@ -56,7 +56,7 @@ a{
   width: 0;
   height: 3px;
   content: " ";
-  background-color: #F44336;
+  background-color: #ff90ff;
   position: absolute;
   top: 0;
   left: 50%;
@@ -71,7 +71,7 @@ a{
 }
 .hover-button:hover {
   letter-spacing: 8px;
-  color: #F44336;
+  color: #ff70ff;
 }
 .hover-button:hover:before, .hover-button:hover:after {
   width: 100%;
