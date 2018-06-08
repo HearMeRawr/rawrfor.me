@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Indie Flower", cursive;
+}
+
+h3 {
+    font-family: "Crimson Text", serif;
+}
