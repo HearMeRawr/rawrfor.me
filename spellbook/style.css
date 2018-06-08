@@ -1,6 +1,11 @@
 * {
     margin: 0;
     text-align: center;
+    color: #e4dc8c;
+}
+
+body {
+    background-color: #170F0D;
 }
 
 header {
@@ -12,10 +17,34 @@ header {
     align-items: center;
 }
 
+header h1{
+    font-size: 70px;
+}
+
+header h3{
+    font-size: 30px;
+}
+
 h1 {
     font-family: "Indie Flower", cursive;
 }
 
 h3 {
     font-family: "Crimson Text", serif;
+}
+
+#index {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+}
+
+.def {
+    margin: 0 auto;
+    width: 50vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: solid;
+    border-color: #e4dc8c;
 }
