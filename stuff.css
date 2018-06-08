@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    text-align: center;
+    font-family: "PT Mono", monospace;
+}
+
+body {
+    background-color: #ffeb3b;
+}
+
+h1 {
+    font-size: 30vw;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    color: white;
+    font-size: 3vw;
+}
+
+
+/*
+
+You: What are you up to, Samantha?
+
+Me: Just, y'know... stuff and things
+
+*/
+
+#stuff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.things {
+    margin-top: 10px;
+    width: 30vw;
+    height: 30vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
