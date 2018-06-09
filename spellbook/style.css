@@ -6,6 +6,8 @@
 
 body {
     background-color: #170F0D;
+    display: flex;
+    justify-content: row;
 }
 
 header {
@@ -36,15 +38,24 @@ h3 {
 #index {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 80vw;
+    height: 100vh;
     justify-content: center;
 }
 
+#banner {
+    background-image:url("images/banner1.jpeg");
+    background-size: cover;
+    width: 20vw;
+    height: 100vh
+}
+
 .def {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 50vw;
     padding-top: 30px;
     padding-bottom: 30px;
     border-top: solid;
+    border-bottom: solid;
     border-color: #e4dc8c;
 }
