@@ -5,11 +5,15 @@
 }
 
 body {
-    background-color: #ffeb3b;
+    background-image: linear-gradient(#eeb6be, #fff);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
-    font-size: 30vw;
+    font-size: 70px;
 }
 
 h2{
@@ -23,7 +27,7 @@ a{
 
 p{
     color: white;
-    font-size: 3vw;
+    font-size: 30px;
 }
 
 
@@ -44,8 +48,8 @@ Me: Just, y'know... stuff and things
 
 .things {
     margin-top: 10px;
-    width: 30vw;
-    height: 30vw;
+    width: 200px;
+    height: 200px;
     background-color: black;
     display: flex;
     align-items: center;
