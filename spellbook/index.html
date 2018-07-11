@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
   <head>
     <title>Spellbook</title> 
     <link href="./style.css" type="text/css" rel="stylesheet">
@@ -8,21 +7,41 @@
   </head>
   <body>
     <div id="banner">
-      
     </div>
     <div id="index">
-      <div class="def">
+      <div class="def spell">
         <h1>Spell:</h1>
         <h3>A form of words used as a magical charm or incantation</h3>
+        <div id="details">
+          <h2>rewr</h2>
+        </div>
       </div>
-      <div class="def">
+      <div class="def sigil">
         <h1>Sigil:</h1>
         <h3>An inscribed or painted symbol considered to have magical power</h3>
+        <div id="details">
+          <h2>rrrrawr</h2>
+        </div>
       </div>
-      <div class="def">
+      <div class="def divination">
         <h1>Divination:</h1>
         <h3>The practice of seeking knowledge of the future or the unknown by supernatural means</h3>
+        <div id="details">
+          <h2>rrrrowr</h2>
+        </div>
       </div>
-    <div>
+    </div>
+    <script type="text/javascript">
+    console.log('script tag working', document.getElementById('banner'))
+    document.getElementById('banner').onclick = function(e){
+        console.log('LOL!', e)
+            }
+    </script>
+    <script type="text/javascript">
+    console.log('samantha wuz here', document.getElementsByClassName('def'))
+    document.getElementsByClassName('def').onmouseenter = function(a){
+        console.log('mouse enter', a)
+    }
+    </script>
   </body>
 </html>

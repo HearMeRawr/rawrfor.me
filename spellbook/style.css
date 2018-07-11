@@ -50,6 +50,15 @@ h3 {
     height: 100vh
 }
 
+#details{
+    visibility: hidden;
+}
+
+#details h2{
+    text-align: center;
+    color: white;
+}
+
 .def {
     margin: 10px auto;
     width: 50vw;

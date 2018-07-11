@@ -1,12 +1,12 @@
 body{
     background: #101010;
-    color: white;
+    color: #000;
     margin: 0;
     padding: 0;
     font-family: Sans-Serif;
 }
 h1{
-    font-size: 20vw;
+    font-size: 100px;
     text-align: center;
     margin: 0;
 }
@@ -28,7 +28,7 @@ a{
     flex-direction: column;
     justify-content: center;
     background-color: #101010;
-    background-image: linear-gradient(#101010, #202020);
+    background-image: linear-gradient(#eeb6be, #fff);
 }
 .subtitle{
     display: flex;
@@ -50,7 +50,7 @@ a{
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  color: #fff;
+  color: #000;
 }
 .hover-button:before, .hover-button:after {
   width: 0;
