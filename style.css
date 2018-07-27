@@ -1,6 +1,6 @@
 body{
     background: #101010;
-    color: #905090;
+    color: #9050AA;
     margin: 0;
     padding: 0;
     font-family: Sans-Serif;
@@ -14,10 +14,10 @@ h3{
     font-size: 25px;
 }
 a{
-    color: #905090;
+    color: #9050AA;
     text-decoration: none;
     font-size: 25px;
-    background-color: #272727;
+    background-color: #272735;
     border-radius: 10px;
     padding: 10px;
     margin-right: 10px;
@@ -25,7 +25,7 @@ a{
 }
 .base{
     height: 100vh;
-    background-color: #202020;
+    background-color: #202030;
     display: flex;
     flex-direction: column;
     justify-content: center;
