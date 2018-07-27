@@ -1,83 +1,45 @@
 body{
     background: #101010;
-    color: #000;
+    color: #905090;
     margin: 0;
     padding: 0;
     font-family: Sans-Serif;
 }
 h1{
-    font-size: 7vw;
-    text-align: center;
     margin: 0;
+    font-size: 50px;
 }
 h3{
     font-weight: normal;
-    text-align: center;
-}
-button{
-    text-align: center;
-    margin: 15;
+    font-size: 25px;
 }
 a{
-    color: #909090;
+    color: #905090;
     text-decoration: none;
+    font-size: 25px;
+    background-color: #272727;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
-.container{
+.base{
     height: 100vh;
+    background-color: #202020;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #101010;
-    background-image: linear-gradient(#eeb6be, #fff);
+    padding: 20px;
+}
+.content{
+    border-left: solid 2px;
+    padding-left: 20px;
 }
 .subtitle{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
-.hover-button {
-  font-family: Sans-Serif !important;
-  outline: none;
-  border: none;
-  padding: 20px;
-  display: block;
-  cursor: pointer;
-  font-size: 20px;
-  background-color: transparent;
-  position: relative;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  color: #000;
-}
-.hover-button:before, .hover-button:after {
-  width: 0;
-  height: 3px;
-  content: " ";
-  background-color: #ff90ff;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-}
-.hover-button:after {
-  top: 100%;
-}
-.hover-button:hover {
-  letter-spacing: 8px;
-  color: #ff70ff;
-}
-.hover-button:hover:before, .hover-button:hover:after {
-  width: 100%;
-  left: 0;
-}
-.hover-button:hover:after {
-  width: 100%;
-  left: 0;
+.hover-button{
 }
