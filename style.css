@@ -37,7 +37,7 @@ a:hover{
     color: #ff7500; 
 }
 .content{
-    padding: 100px;
+    padding: 8vw;
     position: absolute;
     animation: fadein 1s;
     z-index: 1;
