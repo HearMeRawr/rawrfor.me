@@ -1,0 +1,25 @@
+{
+  "name": "rawrfor.me",
+  "version": "1.0.0",
+  "description": "Samantha's portfolio website.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HearMeRawr/rawrfor.me.git"
+  },
+  "author": "Samantha (Ripley)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HearMeRawr/rawrfor.me/issues"
+  },
+  "homepage": "https://github.com/HearMeRawr/rawrfor.me#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14"
+  }
+}

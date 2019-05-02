@@ -1,63 +1,149 @@
-body{
-    background: #ff7500;
-    color: #460003;
-    margin: 0;
-    padding: 0;
-    font-family: 'Didact Gothic', sans-serif;
-}
+/* Animations */
+
 @keyframes fadein{
-    from {opacity: 0;}
-    to  {opacity: 1;}
+    from {opacity: 0}
+    to {opacity: 1}
 }
-h1{
-    margin: 0;
-    font-size: 50px;
-}
-h3{
-    font-weight: normal;
-    font-size: 25px;
-}
-a{
-    display: block;
-    color: #FFD9B9;
-    text-decoration: none;
-    font-size: 25px;
-    border-color: #FFD9B9;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    padding: 10px;
-    padding-bottom: 10px;
-    transition: 0.2s;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-a:hover{
-    background: #ffffff;
-    color: #ff7500; 
-}
-.content{
-    padding: 8vw;
+  
+/* General styles */
+ 
+canvas {
     position: absolute;
-    animation: fadein 1s;
-    z-index: 1;
+    top: 0px;
+    z-index: -1;
 }
-.subtitle{
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+  
+h1 {
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    color: #9164BE;
+}
+  
+.content{
+}
+  
+.page{ 
+}
+  
+.row{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-canvas{
-    opacity: 0.5;
-    z-index: 0;
+  
+/* Index */
+  
+.index{
+  background: #9164BE;
+  color: #c387ff;
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 0px;
+  border: solid 5px #9164BE;
+  border-left: solid 30px #9164BE;
+}
+.index .row{
+    justify-content:space-between;
+}
+.index a{
+  color: #c387ff;
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  padding: 15px;
+}
+  
+/* Top */
+
+.subtitle {
+margin-top: -20px;
+font-style: italic;
+font-size: 3vw;
+color: #666;
 }
 
+#top {
+margin: 30vh 15vw 0px 15vw;
+text-align: center; 
+}
 
-/* NOTES:
-Maybe a randomly generated tile pattern
-in orange on the left side on desktop?
+/* About */
 
-Projects should be listed on this page, 
-not the other one.
-*/
+#about {
+padding: 10vw 10vw; 
+margin-top: 30vh;
+background-color: #9164BE;
+color: white;
+}
+
+#about h2{
+font-size: 30px;
+}
+
+#about p{
+font-size: 20px;
+line-height: 40px;
+font-family: "Nunito", sans-serif;
+line-height: 50px;
+} 
+
+.image{
+    width: 600px;
+    height: 300px;
+    background-image: url(./assets/IMG_2308.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 100px; 
+}
+/* Services */
+
+#services{
+    margin: 10vh 15vw 0px 15vw;
+    display:none; 
+}
+
+#services h2{
+    font-size: 30px;
+    color: #9164BE;
+}
+  
+.service {
+width: 33%;
+text-align: center;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 900px){
+    #top{
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #about{
+        padding: 20px;
+        margin-top: 20px;
+    }
+    #services{
+        margin: 20px;
+    }
+    .service{
+        width: 40%;
+    }
+    .row{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .image{
+        width: 50vw;
+        margin-right: 0px;
+    }
+}
