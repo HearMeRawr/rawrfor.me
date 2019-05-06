@@ -9,10 +9,30 @@ var randomInt = (min, max) => {
 //  return 0;
 }
 
-var colorScale = chroma.scale(['red','yellow','limegreen','blue','purple']).mode('hsl').domain([0,100]);
+if (window.innerWidth > 900){
+  var colors = [
+    'red',
+    'yellow',
+    'limegreen',
+    'blue',
+    'purple'
+  ]
+} else {
+  var colors = [
+    '#F06292',
+    '#BA68C8',
+    '#7986CB',
+    '#64B5F6',
+    '#4DB6AC',
+    '#FFF176',
+    '#FFB74D'
+  ]
+}
+
+var colorScale = chroma.scale(colors).mode('hsl').domain([0,100]);
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerWidth, window.outerHeight);
   frameRate(60);
 }
 
@@ -35,7 +55,7 @@ function draw() {
 function DropRain() {
   this.color = colorScale(randomInt(0,100)).saturate(5).hex();
   this.x = randomInt(0,window.innerWidth);
-  this.y = randomInt(0, window.innerHeight);
+  this.y = randomInt(0, window.outerHeight);
   this.size = randomInt(3, 20);
 
   this.drawAndDrop = () => {
@@ -54,13 +74,13 @@ function DropRain() {
       this.x -= (this.size * 0.5);
       this.y -= (this.size * 0.5);
     } else {
-      this.random = randomInt(0, window.innerHeight + window.innerWidth);
-      if(this.random < window.innerHeight){
+      this.random = randomInt(0, window.outerHeight + window.innerWidth);
+      if(this.random < window.outerHeight){
         this.x = window.innerWidth;
-        this.y = randomInt(0,window.innerHeight);
+        this.y = randomInt(0,window.outerHeight);
       } else {
         this.x = randomInt(0,window.innerWidth);
-        this.y = window.innerHeight;
+        this.y = window.outerHeight;
       }
       this.size = randomInt(3, 20);
     }
