@@ -1,4 +1,4 @@
-var rainInt = 300;
+var rainInt = 100;
 
 var rain = [];
 
@@ -38,7 +38,7 @@ function setup() {
 
 function draw() {
   clear();
-  background(255);
+  background("#9164BE");
 
   fill("#9164BE");
   stroke("#9164BE");
@@ -53,7 +53,7 @@ function draw() {
 }
 
 function DropRain() {
-  this.color = colorScale(randomInt(0,100)).saturate(5).hex();
+  this.color = 255;
   this.x = randomInt(0,window.innerWidth);
   this.y = randomInt(0, window.outerHeight);
   this.size = randomInt(3, 20);

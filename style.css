@@ -6,6 +6,12 @@
 }
   
 /* General styles */
+
+css-doodle{
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+}
  
 canvas {
     position: absolute;
@@ -16,15 +22,17 @@ canvas {
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    background: #9164BE;
+    overflow-x:hidden;
 }
   
 h1 {
-    font-family: "Nunito", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     font-weight: bold;
-    font-size: 5vw;
-    color: #9164BE;
+    font-size: 4vw;
+    text-shadow: 1px 3px grey;
+    color: white;
 }
-  
 .content{
 }
   
@@ -40,22 +48,26 @@ h1 {
 /* Index */
   
 .index{
-  background: #9164BE;
   color: white;
-  font-size: 15px;
-  font-family: "Roboto Mono", monospace;
-  margin-top: 0px;
-  border: solid 5px #9164BE;
-  border-left: solid 30px #9164BE;
+  font-size: 20px;
+  font-family: "Roboto", monospace;
+  width: 100vw;
+  top: 0px;
+  position: fixed;
+  background: white;
+  z-index: -2;
 }
 .index .row{
-    justify-content:space-between;
+  justify-content:space-around;
+  align-items: center;
+  z-index: 0;
 }
 .index a{
   color: white;
-  font-size: 15px;
-  font-family: "Roboto Mono", monospace;
-  padding: 15px;
+  font-size: 20px;
+  font-family: "Roboto", monospace;
+  text-decoration: none;
+  text-align: right;
 }
   
 /* Top */
@@ -63,8 +75,8 @@ h1 {
 .subtitle {
 margin-top: -20px;
 font-style: italic;
-font-size: 3vw;
-color: #666;
+font-size: 2vw;
+color: white;
 }
 
 #top {
@@ -75,25 +87,30 @@ text-align: center;
 /* About */
 
 #about {
-padding: 10vw 10vw; 
+padding: 6vw; 
 margin-top: 30vh;
-background-color: #9164BE;
-color: white;
+background-color: white;
+color: #9164BE;
+margin: 20vw;
+border: solid 3px white;
+border-radius: 10px;
 }
 
 #about h2{
 font-size: 30px;
+font-family: "Comfortaa", sans-serif;
 }
 
 #about p{
+color: black;
 font-size: 20px;
 line-height: 40px;
-font-family: "Nunito", sans-serif;
+font-family: "Roboto Mono", sans-serif;
 line-height: 50px;
 } 
 
 .image{
-    width: 600px;
+    min-width: 150px;
     height: 300px;
     background-image: url(./assets/IMG_2308.png);
     background-size: contain;
